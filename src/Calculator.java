@@ -1,5 +1,6 @@
 /*
- *This is a GUI grade average calculator
+ * Arun K
+ * This is a GUI average grade calculator
  * Septembre 21 2019
 */
 
@@ -201,13 +202,13 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_FinalGradeTxtActionPerformed
 
     private void ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonActionPerformed
-        // TODO add your handling code here:
+        // Variable Declaration Area
         double num1;
         double num2;
         double num3;
         double num4;
         double answer;
-        
+//        Calculation Area
         num1 = Double.parseDouble(FirstTxt.getText());
         num2 = Double.parseDouble(SecondTxt.getText());
         num3 = Double.parseDouble(ThirdTxt.getText());
