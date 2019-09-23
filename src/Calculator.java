@@ -202,19 +202,21 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_FinalGradeTxtActionPerformed
 
     private void ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonActionPerformed
-        // Variable Declaration Area
+//      Variable Declaration Area
         double num1;
         double num2;
         double num3;
         double num4;
         double answer;
-//        Calculation Area
+//      Calculation Area
         num1 = Double.parseDouble(FirstTxt.getText());
         num2 = Double.parseDouble(SecondTxt.getText());
         num3 = Double.parseDouble(ThirdTxt.getText());
         num4 = Double.parseDouble(FourthTxt.getText());
        
+//      Average Calculator  
         answer = ((num1 + num2 + num3 + num4) / 4) * 10;
+        
         
         answer = Math.round(answer);
         
