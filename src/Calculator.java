@@ -9,7 +9,15 @@
  * @author arkir7294
  */
 public class Calculator extends javax.swing.JFrame {
-
+    //  Variable Declaration Area
+        double num1;
+        double num2;
+        double num3;
+        double num4;
+        double answer;
+        double [] numTotal = new double[3];
+        double sum;
+        
     /**
      * Creates new form Calculator
      */
@@ -202,20 +210,20 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_FinalGradeTxtActionPerformed
 
     private void ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonActionPerformed
-//      Variable Declaration Area
-        double num1;
-        double num2;
-        double num3;
-        double num4;
-        double answer;
-//      Calculation Area
+//      Get numbers 
         num1 = Double.parseDouble(FirstTxt.getText());
         num2 = Double.parseDouble(SecondTxt.getText());
         num3 = Double.parseDouble(ThirdTxt.getText());
         num4 = Double.parseDouble(FourthTxt.getText());
-       
+        double numTotal [] = {num1,num2,num3,num4};
+        
 //      Average Calculator  
-        answer = ((num1 + num2 + num3 + num4) / 4) * 10;
+        for (int i = 0; i <= 3; i++){
+           answer = numTotal[i];
+           sum += numTotal[i];
+        }
+
+        answer = ((numTotal[0] + numTotal[1] + numTotal[2] + numTotal[3]) / 4) * 10;
         
         
         answer = Math.round(answer);
