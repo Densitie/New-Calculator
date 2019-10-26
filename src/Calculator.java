@@ -1,7 +1,7 @@
 /*
  * This is a GUI average grade calculator
  * October 22 2019
-*/
+ */
 
 /**
  *
